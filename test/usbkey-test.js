@@ -2,14 +2,14 @@ const USBKey = require('../lib/usbkey');
 const fs = require('fs');
 
 const usbkey = new USBKey();
-usbkey.connect();
+// usbkey.connect();
 
 fp = fs.readFileSync('test.svg');
 console.log(usbkey.splitFileIntoBlocks(fp).length);
 
 const encrypt_start = new Date().getTime();
 
-datas = usbkey.encryptFile(fp);
+datas = usbkey.encryptFile(fp).encryptedBlocks;
 console.log(datas.length);
 
 const encrypt_end = new Date().getTime();
