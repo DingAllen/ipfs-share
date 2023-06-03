@@ -1,6 +1,6 @@
 'use strict';
 
-const ipfsSaveShare = require('./lib/ipfsSaveShare');
+const IpfsSaveShare = require('./lib/ipfsSaveShare');
 
-module.exports.IpfsSaveShare = ipfsSaveShare;
-module.exports.contracts = [ipfsSaveShare];
+module.exports.IpfsSaveShare = IpfsSaveShare;
+module.exports.contracts = [IpfsSaveShare];
